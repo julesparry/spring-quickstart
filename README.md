@@ -1,4 +1,4 @@
-spring-quickstart
+Spring Quickstart
 =================
 
-spring-quickstart
+A quick start to a working spring app.
