@@ -1,0 +1,28 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unit Test Results: All Tests</title>
+<link rel="stylesheet" type="text/css" title="Style" href="stylesheet.css">
+</head>
+<body onload="open('allclasses-frame.html','classListFrame')">
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h2>All Tests</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Class</th><th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="Error">
+<td><a href="com/example/app/web/page/tests/0_ExampleFunctionalTests.html">ExampleFunctionalTests</a></td><td><a name="shouldSearchForSomething"></a><a href="com/example/app/web/page/tests/0_ExampleFunctionalTests.html#shouldSearchForSomething">shouldSearchForSomething</a></td><td>Error</td><td>com/gargoylesoftware/htmlunit/WebWindowListener<br>
+<br>
+<code>java.lang.NoClassDefFoundError: com/gargoylesoftware/htmlunit/WebWindowListener<br>	at com.example.app.web.page.Browser.&lt;init&gt;(Browser.java:24)<br>	at com.example.app.web.page.Application.start(Application.java:63)<br>	at com.example.app.web.page.Application.instance(Application.java:34)<br>	at com.example.app.web.page.Application.browser(Application.java:21)<br>	at com.example.app.web.page.tests.LoginLogoutRule.&lt;init&gt;(LoginLogoutRule.java:13)<br>	at com.example.app.web.page.tests.ExampleFunctionalTests.&lt;init&gt;(ExampleFunctionalTests.java:9)<br>	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)<br>Caused by: java.lang.ClassNotFoundException: com.gargoylesoftware.htmlunit.WebWindowListener<br>	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)<br>	at java.security.AccessController.doPrivileged(Native Method)<br>	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)<br>	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)<br>	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)<br>	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)<br>
+</code></td><td>1.158</td>
+</tr>
+</table>
+</body>
+</html>

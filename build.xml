@@ -20,7 +20,7 @@
         <fileset dir="${compile.dir}"/>
         <fileset dir="lib/runtime/jar"/>
         <fileset dir="lib/runtime/bundle"/>
-        <fileset dir="lib/buildtime/jar"/>
+        <fileset dir="lib/buildtime/jar" />
         <fileset dir="lib/jetty/jar" excludes="ant-*.jar"/>
     </path>
 
@@ -49,7 +49,7 @@
         <sequential>
             <mkdir dir="${test.report.dir}"/>
             <junit fork="yes" forkmode="once" failureproperty="unit.tests.failed" printsummary="yes">
-                <!--<classpath refid="@{classpath}" />-->
+                <classpath refid="@{classpath}" />
                 <formatter type="xml"/>
                 <batchtest if="testcase" todir="${test.report.dir}">
                     <fileset dir="@{testdir}/java">
