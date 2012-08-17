@@ -19,7 +19,6 @@
         <pathelement location="${src.dir}/deployment/env/dev"/>
         <fileset dir="${compile.dir}"/>
         <fileset dir="lib/runtime/jar"/>
-        <fileset dir="lib/runtime/bundle"/>
         <fileset dir="lib/buildtime/jar" />
         <fileset dir="lib/jetty/jar" excludes="ant-*.jar"/>
     </path>
@@ -155,7 +154,6 @@
                 <include name="static/"/>
             </zipfileset>
             <lib dir="${compile.dir}" excludes="*-tests.jar"/>
-            <lib dir="lib/runtime/bundle"/>
             <lib dir="lib/runtime/jar"/>
         </war>
     </target>
